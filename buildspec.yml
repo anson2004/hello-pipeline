@@ -16,7 +16,7 @@ phases:
     commands:
       - echo Entered the post_build phase...
       - mkdir -p target
-      - zip target/build.zip ./* -x target/\* -x buildspec.yml
+      - cp -r !(buildspec.yml|target) target
 artifacts:
   files:
-    target/build.zip
+    - target/*
