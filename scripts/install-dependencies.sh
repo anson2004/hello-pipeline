@@ -1,5 +1,7 @@
 #!/bin/bash
-
+echo "Starting install-dependencies script"
+echo whoami
+echo $PATH
 if which node > /dev/null
     then
         echo "node is installed, skipping..."
