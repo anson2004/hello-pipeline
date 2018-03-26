@@ -7,10 +7,18 @@ phases:
   pre_build:
     commands:
       - echo Entering pre build phase...
+      - npm install
   build:
     commands:
       - echo Entering build phase...
-      - npm install
   post_build:
     commands:
       - echo Entered the post_build phase...
+artifacts:
+  files:
+    - scripts/*
+    - appspec.yml
+    - index.js
+    - package.json
+    - README.md
+    - node_modules/*
