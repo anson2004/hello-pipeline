@@ -1,4 +1,4 @@
-source /home/ubuntu/.bashrc
+#!/bin/bash
 
 if which node > /dev/null
     then

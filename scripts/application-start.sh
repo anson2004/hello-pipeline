@@ -1,4 +1,4 @@
-source /home/ubuntu/.bashrc
+#!/bin/bash
 
 cd /var/api
 npm start
