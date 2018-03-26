@@ -1,3 +1,5 @@
+source /home/ubuntu/.bashrc
+
 if which node > /dev/null
     then
         echo "node is installed, skipping..."
