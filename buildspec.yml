@@ -1,0 +1,25 @@
+version: 0.2
+
+env:
+  variables:
+
+phases:
+  install:
+    commands:
+      - echo Entering install phase...
+  pre_build:
+    commands:
+      - echo Entering pre build phase...
+      - rm -rf target
+  build:
+    commands:
+      - echo Entering build phase...
+      - npm install
+  post_build:
+    commands:
+      - echo Entered the post_build phase...
+      - mkdir -p target
+      - zip target/build.zip ./* -x target/\* -x buildspec.yml
+artifacts:
+  files:
+    target/build.zip
