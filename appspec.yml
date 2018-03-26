@@ -4,6 +4,10 @@ files:
   - source: /
     destination: /var/api/
 hooks:
+  BeforeInstall:
+    - location: scripts/install-dependencies.sh
+      runas: root
+      timeout: 600
   ApplicationStart:
     - location: scripts/application-start.sh
       runas: root
