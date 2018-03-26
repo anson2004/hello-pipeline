@@ -7,8 +7,12 @@ hooks:
   BeforeInstall:
     - location: scripts/install-dependencies.sh
       runas: ubuntu
-      timeout: 600
+      timeout: 300
   ApplicationStart:
     - location: scripts/application-start.sh
       runas: ubuntu
-      timeout: 300
+      timeout: 60
+  ApplicationStop:
+    - location: scripts/application-stop.sh
+      runas: ubuntu
+      timeout: 60

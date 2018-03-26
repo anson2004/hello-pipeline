@@ -1,8 +1,8 @@
 #!/bin/bash
-echo "Starting application-start script"
+echo "Starting application-stop script"
 whoami
 echo $PATH
 export PATH=/home/ubuntu/.nvm/versions/node/v6.11.5/bin:$PATH
 echo $PATH
 cd /var/api
-pm2 start index.js --name "hello-pipeline"
+pm2 stop "hello-pipeline"
