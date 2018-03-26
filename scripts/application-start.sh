@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Starting application-start script"
-echo whoami
+whoami
 echo $PATH
 cd /var/api
 npm start
