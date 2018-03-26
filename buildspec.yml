@@ -7,7 +7,6 @@ phases:
   pre_build:
     commands:
       - echo Entering pre build phase...
-      - rm -rf target
   build:
     commands:
       - echo Entering build phase...
@@ -15,8 +14,7 @@ phases:
   post_build:
     commands:
       - echo Entered the post_build phase...
-      - mkdir -p target
-      - cp -r !(buildspec.yml|target) target
+      - npm run build
 artifacts:
   files:
     - target/*
