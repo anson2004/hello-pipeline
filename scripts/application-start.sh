@@ -5,4 +5,4 @@ echo $PATH
 source ~/.bash_profile
 echo $PATH
 cd /var/api
-pm2 start index.js --name "hello-pipeline"
+pm2 startOrReload index.js --name "hello-pipeline"
