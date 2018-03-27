@@ -2,7 +2,7 @@
 echo "Starting application-start script"
 whoami
 echo $PATH
-export PATH=/home/ubuntu/.nvm/versions/node/v6.11.5/bin:$PATH
+source ~/.bash_profile
 echo $PATH
 cd /var/api
 pm2 start index.js --name "hello-pipeline"

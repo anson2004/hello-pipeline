@@ -2,7 +2,7 @@
 echo "Starting install-dependencies script"
 whoami
 echo $PATH
-export PATH=/home/ubuntu/.nvm/versions/node/v6.11.5/bin:$PATH
+source ~/.bash_profile
 echo $PATH
 
 if which node > /dev/null
