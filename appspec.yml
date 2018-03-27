@@ -14,5 +14,5 @@ hooks:
       timeout: 60
   ApplicationStop:
     - location: scripts/application-stop.sh
-      runas: ubuntu
+      runas: ec2-user
       timeout: 60
